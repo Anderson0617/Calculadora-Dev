@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Calculadora-Dev</title>
+  <link rel="stylesheet" href="estyle.css">
+</head>
+
+
+<div class="calculadora">
+  <div class="visor">
+    <input type="text" id="resultado" readonly aria-label="Resultado da calculadora">
+  </div>
+  <div class="botoes-0-a-9">
+    <button class="botao" onclick="insert('1')">1</button>
+    <button class="botao" onclick="insert('2')">2</button>
+    <button class="botao" onclick="insert('3')">3</button>
+    <button class="botao" onclick="insert('4')">4</button>
+    <button class="botao" onclick="insert('5')">5</button>
+
+    <button class="botao" onclick="insert('6')">6</button>
+    <button class="botao" onclick="insert('7')">7</button>
+    <button class="botao" onclick="insert('8')">8</button>
+    <button class="botao" onclick="insert('9')">9</button>
+    <button class="botao" onclick="insert('0')">0</button>
+    <button class="botao" onclick="insert('.')">.</button>
+    <button class="botao" onclick="insert(',')">,</button>
+  </div>
+  <div class="botoes-menu">
+
+    <button class="botao" onclick="clean()">C</button>
+    <button class="botao" onclick="backspace()">⌫</button>
+    <button class="botao" onclick="insert('%')">%</button>
+    <button class="botao" onclick="insert('/')">/</button>
+  </div>
+  <div class="botoes-ou+e=">
+    <button class="botao" onclick="raizQuadrada()">&#x221A;</button>
+    <button class="botao" onclick="calcular()">=</button>
+    <button class="botao" onclick="insert('+')">+</button>
+    <button class="botao" onclick="insert('-')">-</button>
+
+  </div>
+
+
+
+
+
+</div>
+
+<script src="script.js"></script>
+</body>
+
+</html>
